@@ -36,13 +36,19 @@ class NotesAdapter(val requireContext: Context, var notesList: List<NoteModel>) 
 
         when (data.priority) {
             "1" -> {
-                holder.binding.viewPriority.setBackgroundResource(R.drawable.green_dot)
+                holder.binding.viewPriority.setBackgroundResource(R.drawable.btn_filter_shape_orange)
             }
             "2" -> {
-                holder.binding.viewPriority.setBackgroundResource(R.drawable.yellow_dot)
+                holder.binding.viewPriority.setBackgroundResource(R.drawable.btn_filter_shape_blue)
             }
             "3" -> {
-                holder.binding.viewPriority.setBackgroundResource(R.drawable.red_dot)
+                holder.binding.viewPriority.setBackgroundResource(R.drawable.btn_filter_shape_pink)
+            }
+            "4" -> {
+                holder.binding.viewPriority.setBackgroundResource(R.drawable.btn_filter_shape_green)
+            }
+            "5" -> {
+                holder.binding.viewPriority.setBackgroundResource(R.drawable.btn_filter_shape_light_pink)
             }
         }
 
@@ -50,7 +56,6 @@ class NotesAdapter(val requireContext: Context, var notesList: List<NoteModel>) 
             val action = HomeFragmentDirections.actionHomeFragmentToEditNotesFragment(data)
             Navigation.findNavController(it).navigate(action)
         }
-
     }
 
     override fun getItemCount() = notesList.size

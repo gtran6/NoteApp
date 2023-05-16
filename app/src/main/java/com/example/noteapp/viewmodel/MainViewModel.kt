@@ -27,6 +27,10 @@ class MainViewModel(application: Application): AndroidViewModel(application) {
 
     fun getMediumNotes(): LiveData<List<NoteModel>> = repository.getMediumNotes()
 
+    fun getCriticalNotes(): LiveData<List<NoteModel>> = repository.getCriticalNotes()
+
+    fun getRoutineNotes(): LiveData<List<NoteModel>> = repository.getRoutineNotes()
+
     fun deleteNotes(id: Int) {
         repository.deleteNotes(id)
     }

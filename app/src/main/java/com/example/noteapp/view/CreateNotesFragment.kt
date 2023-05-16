@@ -27,25 +27,47 @@ class CreateNotesFragment : Fragment() {
 
         binding = FragmentCreateNotesBinding.inflate(layoutInflater, container, false)
 
-        binding.pGreen.setImageResource(R.drawable.ic_baseline_done_24)
+        binding.pPink.setImageResource(R.drawable.ic_baseline_done_24)
 
-        binding.pGreen.setOnClickListener {
+        binding.pPink.setOnClickListener {
             priority = "1"
-            binding.pGreen.setImageResource(R.drawable.ic_baseline_done_24)
-            binding.pRed.setImageResource(0)
-            binding.pYellow.setImageResource(0)
+            binding.pPink.setImageResource(R.drawable.ic_baseline_done_24)
+            binding.pOrange.setImageResource(0)
+            binding.pBlue.setImageResource(0)
+            binding.pGreen.setImageResource(0)
+            binding.pLightPink.setImageResource(0)
         }
-        binding.pYellow.setOnClickListener {
+        binding.pBlue.setOnClickListener {
             priority = "2"
-            binding.pYellow.setImageResource(R.drawable.ic_baseline_done_24)
-            binding.pRed.setImageResource(0)
+            binding.pBlue.setImageResource(R.drawable.ic_baseline_done_24)
+            binding.pOrange.setImageResource(0)
+            binding.pPink.setImageResource(0)
             binding.pGreen.setImageResource(0)
+            binding.pLightPink.setImageResource(0)
         }
-        binding.pRed.setOnClickListener {
+        binding.pOrange.setOnClickListener {
             priority = "3"
-            binding.pRed.setImageResource(R.drawable.ic_baseline_done_24)
+            binding.pOrange.setImageResource(R.drawable.ic_baseline_done_24)
+            binding.pPink.setImageResource(0)
+            binding.pBlue.setImageResource(0)
             binding.pGreen.setImageResource(0)
-            binding.pYellow.setImageResource(0)
+            binding.pLightPink.setImageResource(0)
+        }
+        binding.pGreen.setOnClickListener {
+            priority = "4"
+            binding.pGreen.setImageResource(R.drawable.ic_baseline_done_24)
+            binding.pOrange.setImageResource(0)
+            binding.pPink.setImageResource(0)
+            binding.pBlue.setImageResource(0)
+            binding.pLightPink.setImageResource(0)
+        }
+        binding.pLightPink.setOnClickListener {
+            priority = "5"
+            binding.pLightPink.setImageResource(R.drawable.ic_baseline_done_24)
+            binding.pOrange.setImageResource(0)
+            binding.pPink.setImageResource(0)
+            binding.pBlue.setImageResource(0)
+            binding.pGreen.setImageResource(0)
         }
 
 

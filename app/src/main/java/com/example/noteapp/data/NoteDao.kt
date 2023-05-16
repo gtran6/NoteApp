@@ -10,14 +10,20 @@ interface NoteDao {
     @Query("SELECT * FROM note_table")
     fun getNotes() : LiveData<List<NoteModel>>
 
-    @Query("SELECT * FROM note_table WHERE priority=3")
+    @Query("SELECT * FROM note_table WHERE priority=5")
+    fun getCriticalNotes(): LiveData<List<NoteModel>>
+
+    @Query("SELECT * FROM note_table WHERE priority=4")
     fun getHighNotes(): LiveData<List<NoteModel>>
 
-    @Query("SELECT * FROM note_table WHERE priority=2")
+    @Query("SELECT * FROM note_table WHERE priority=3")
     fun getMediumNotes(): LiveData<List<NoteModel>>
 
-    @Query("SELECT * FROM note_table WHERE priority=1")
+    @Query("SELECT * FROM note_table WHERE priority=2")
     fun getLowNotes(): LiveData<List<NoteModel>>
+
+    @Query("SELECT * FROM note_table WHERE priority=1")
+    fun getRoutineNotes(): LiveData<List<NoteModel>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertNotes(notes: NoteModel)

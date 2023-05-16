@@ -21,7 +21,6 @@ class HomeFragment : Fragment() {
     var oldMyNotes = arrayListOf<NoteModel>()
     lateinit var adapter: NotesAdapter
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
@@ -41,9 +40,17 @@ class HomeFragment : Fragment() {
             binding.rcvAllNotes.adapter = adapter
         }
 
-        //filter high
-        binding.filterHigh.setOnClickListener {
+        //filter critical
+        binding.filterOrange.setOnClickListener {
+            viewModel.getCriticalNotes().observe(viewLifecycleOwner) { notesList ->
+                oldMyNotes = notesList as ArrayList<NoteModel>
+                adapter = NotesAdapter(requireContext(), notesList)
+                binding.rcvAllNotes.adapter = adapter
+            }
+        }
 
+        //filter high
+        binding.filterBlue.setOnClickListener {
             viewModel.getHighNotes().observe(viewLifecycleOwner) { notesList ->
                 oldMyNotes = notesList as ArrayList<NoteModel>
                 adapter = NotesAdapter(requireContext(), notesList)
@@ -59,22 +66,31 @@ class HomeFragment : Fragment() {
             }
         }
         //filter low
-        binding.filterLow.setOnClickListener {
+        binding.filterGreen.setOnClickListener {
             viewModel.getLowNotes().observe(viewLifecycleOwner) { notesList ->
                 oldMyNotes = notesList as ArrayList<NoteModel>
                 adapter = NotesAdapter(requireContext(), notesList)
                 binding.rcvAllNotes.adapter = adapter
             }
         }
-        //filter medium
-        binding.filterMedium.setOnClickListener {
-            viewModel.getMediumNotes().observe(viewLifecycleOwner) { notesList ->
+
+        //filter routine
+        binding.filterLightPink.setOnClickListener {
+            viewModel.getRoutineNotes().observe(viewLifecycleOwner) { notesList ->
                 oldMyNotes = notesList as ArrayList<NoteModel>
                 adapter = NotesAdapter(requireContext(), notesList)
                 binding.rcvAllNotes.adapter = adapter
             }
         }
 
+        //filter medium
+        binding.filterPink.setOnClickListener {
+            viewModel.getMediumNotes().observe(viewLifecycleOwner) { notesList ->
+                oldMyNotes = notesList as ArrayList<NoteModel>
+                adapter = NotesAdapter(requireContext(), notesList)
+                binding.rcvAllNotes.adapter = adapter
+            }
+        }
 
         binding.btnAddNotes.setOnClickListener {
             Navigation.findNavController(it)

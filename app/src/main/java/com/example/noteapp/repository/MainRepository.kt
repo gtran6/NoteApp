@@ -13,6 +13,10 @@ class MainRepository (val noteDao: NoteDao){
 
     fun getMediumNotes(): LiveData<List<NoteModel>> = noteDao.getMediumNotes()
 
+    fun getCriticalNotes(): LiveData<List<NoteModel>> = noteDao.getCriticalNotes()
+
+    fun getRoutineNotes(): LiveData<List<NoteModel>> = noteDao.getRoutineNotes()
+
 
     fun insertNotes(notes: NoteModel) {
         noteDao.insertNotes(notes)
