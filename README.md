@@ -3,7 +3,8 @@
 Note Demo using MVVM, RoomDB and Navigation Component
 
 ## Phone Display
-<img src="https://github.com/gtran6/Calculator/assets/78507684/0d846f64-dbb3-415b-82e5-4966f3f9147d" width="30%" height="30%">&ensp;
+<img src="https://github.com/gtran6/Calculator/assets/78507684/4d0516f9-eaa2-46c0-a794-5e13e467154a" width="30%" height="30%">&ensp;<img src="https://github.com/gtran6/Calculator/assets/78507684/18798d90-49ab-4310-839d-b2f7233c1474" width="30%" height="30%">&ensp;<img src="https://github.com/gtran6/Calculator/assets/78507684/4c7ebdfc-d2cb-41e9-bcdd-995e82698a24" width="30%" height="30%">&ensp;
+<img src="https://github.com/gtran6/Calculator/assets/78507684/be6a3ede-b6ea-4bf1-8030-fc08c37af6cb" width="30%" height="30%">&ensp;<img src="https://github.com/gtran6/Calculator/assets/78507684/2f3309d0-c2cb-42aa-8d97-ad21b33e4f24" width="30%" height="30%">
 
 ## Features
 The Note App is an Android application developed in Kotlin using the MVVM (Model-View-ViewModel) architecture. It allows users to create, edit, delete, search, and prioritize notes. The app provides a user-friendly interface for managing notes efficiently.
