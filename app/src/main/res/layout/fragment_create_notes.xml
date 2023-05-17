@@ -51,36 +51,36 @@
 
                 <ImageView
                     android:id="@+id/pPink"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:background="@drawable/btn_filter_shape_pink" />
 
                 <ImageView
                     android:id="@+id/pBlue"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:layout_marginStart="20dp"
                     android:background="@drawable/btn_filter_shape_blue" />
 
 
                 <ImageView
                     android:id="@+id/pOrange"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:layout_marginStart="20dp"
                     android:background="@drawable/btn_filter_shape_orange" />
 
                 <ImageView
                     android:id="@+id/pGreen"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:layout_marginStart="20dp"
                     android:background="@drawable/btn_filter_shape_green" />
 
                 <ImageView
                     android:id="@+id/pLightPink"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:layout_marginStart="20dp"
                     android:background="@drawable/btn_filter_shape_light_pink" />
 

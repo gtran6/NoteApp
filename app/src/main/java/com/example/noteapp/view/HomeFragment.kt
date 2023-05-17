@@ -105,7 +105,7 @@ class HomeFragment : Fragment() {
 
         val item = menu.findItem(R.id.app_bar_search)
         val searchView = item.actionView as SearchView
-        searchView.queryHint = "Enter Notes Here..."
+        searchView.queryHint = "Search Notes Here..."
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(p0: String?): Boolean {
                 return false
